@@ -7,3 +7,10 @@
 </script>
 
 <button on:click={increment}>{count}</button>
+
+<style>
+  button {
+    font-weight: inherit;
+    background: none;
+  }
+</style>
