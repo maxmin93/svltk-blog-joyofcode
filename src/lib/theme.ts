@@ -3,10 +3,21 @@ import { browser } from '$app/environment';
 
 type Theme = 'light' | 'dark';
 
+// if false, dark theme is used
 const userTheme = browser && localStorage.getItem('color-scheme');
 
 // create the store
-export const theme = writable(userTheme ?? 'dark');
+export const theme = writable(userTheme || 'dark');
+
+// -------------------------------
+// **NOTE: toggleTheme 에서 localStorage 갱신 처리
+// -------------------------------
+// theme.subscribe((value) => {
+//   if (browser) {
+//     localStorage.setItem('color-scheme', value);
+//   }
+//   return value;
+// });
 
 // update the theme
 export function toggleTheme() {
