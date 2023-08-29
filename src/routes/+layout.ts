@@ -1,7 +1,9 @@
 export const prerender = true;
 
-export async function load({ url }) {
+import type { LayoutLoad } from './$types';
+
+export const load: LayoutLoad = async ({ url }) => {
   return {
     url: url.pathname,
   };
-}
+};

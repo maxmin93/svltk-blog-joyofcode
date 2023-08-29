@@ -1,4 +1,5 @@
 import { json } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 import type { Post } from '$lib/types';
 
 async function getPosts() {
@@ -22,7 +23,7 @@ async function getPosts() {
   return posts;
 }
 
-export async function GET() {
+export const GET: RequestHandler = async () => {
   const posts = await getPosts();
   return json(posts);
-}
+};

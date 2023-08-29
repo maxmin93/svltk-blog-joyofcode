@@ -21,3 +21,8 @@ function greet(name: string) {
 ```
 
 ### h3 title
+
+<p>이것은 <span style="color:red">HTML</span> 입니다.</p>
+
+- 글자색은 RED 로 출력됩니다.
+  - Item 마커가 왜 불모양으로 나오나요?
