@@ -9,9 +9,9 @@ JoyOfCode 블로거의 SvelteKit Blog 만들기를 따라한 클론 프로젝트
 
 > 화면 캡쳐
 
-![svltk-blog-joyofcode-list](./static/29-svltk-blog-joyofcode-list.png)
+<img src="./static/29-svltk-blog-joyofcode-list.png" alt="svltk-blog-joyofcode-list" width="480" />
 
-![svltk-blog-joyofcode-post1](./static/29-svltk-blog-joyofcode-post1.png)
+<img src="./static/29-svltk-blog-joyofcode-post1.png" alt="svltk-blog-joyofcode-post1" width="480">
 
 ## 프로젝트 생성
 
@@ -111,7 +111,7 @@ export const load: PageLoad = async ({ params }) => {
 - first-post.md, second-post.md, example.md (Counter 버튼 예시)
 - counter.svelte : 예시용 Svelte 컴포넌트
 
-![svltk-blog-joyofcode-post3](./static/29-svltk-blog-joyofcode-post3.png)
+<img src="./static/29-svltk-blog-joyofcode-post3.png" alt="svltk-blog-joyofcode-post3" width="420">
 
 > `src/app.html`
 
